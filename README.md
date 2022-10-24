@@ -45,7 +45,7 @@ https://github.com/TRIVIUZ777/BASE-DE-DATOS-.1/tree/main/HITO_3/LABS
 
 ## 👤 Author
 
-**Brayanjose Villca Ichuta**
+**Brayan Jose Villca Ichuta**
 
 - Github: [@TRIVIUZ777](https://github.com/TRIVIUZ777)
 
