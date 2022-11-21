@@ -50,12 +50,12 @@ from ESTUDIATES as est
 select COUNT(est.ID_EST) --SIEMPRE USAR EL PRIMARY KEY
 from ESTUDIATES as est
 -----------------------------------------------------------
---Determinar cuántos estudiantes hay en donde su apellido contenga la palabra el y ademas sea del genero
+--Determinar cuÃ¡ntos estudiantes hay en donde su apellido contenga la palabra el y ademas sea del genero
 select COUNT(est.ID_EST)
 from ESTUDIATES as est
 where est.APELLIDOS like '%el%' AND est.GENERO='masculino';
 --------------------------------------------------------------------------------
---Determinar cuántos estudiantes tiene una edad de 20
+--Determinar cuÃ¡ntos estudiantes tiene una edad de 20
 select COUNT(est.ID_EST)
 from ESTUDIATES as est
 where est.EDAD > 20 AND est.EDAD < 30 AND est.LICENCIA_DE_CONDUCIR = 1;
@@ -65,7 +65,7 @@ select COUNT(est.ID_EST)
 from ESTUDIATES as est
 where est.EDAD BETWEEN 21 AND 29 AND est.LICENCIA_DE_CONDUCIR = 1;
 --------------------------------------------------------------------------------
---Manejo de ER con funciones de agregación
+--Manejo de ER con funciones de agregaciÃ³n
 CREATE TABLE ESCUELA(
 ID_ES INT IDENTITY PRIMARY KEY NOT NULL,
 NOMBRE VARCHAR(25) NOT NULL,
@@ -73,10 +73,10 @@ DIRECCION VARCHAR(50) NOT NULL,
 TURNO VARCHAR(25) NOT NULL
 );
 INSERT INTO ESCUELA(NOMBRE,DIRECCION,TURNO)
-VALUES('San Simos','Cochabamba','mañana')
-,('Andres Bello','El Alto','mañana-tarde')
-,('Amor de Dios Fe y Alegria','El Alto','mañana-tarde')
-,('Don Bosco','La paz','mañana-tarde-noche');
+VALUES('San Simos','Cochabamba','maÃ±ana')
+,('Andres Bello','El Alto','maÃ±ana-tarde')
+,('Amor de Dios Fe y Alegria','El Alto','maÃ±ana-tarde')
+,('Don Bosco','La paz','maÃ±ana-tarde-noche');
 
 --MUESTRA EL VALOR DE PI
 select pi() as PI;
@@ -101,7 +101,7 @@ where esc.NOMBRE='Amor de Dios Fe y Alegria';
 select count(est.ID_EST)
 from ESTUDIATES as est
 INNER JOIN ESCUELA AS esc on esc.ID_ES=est.ID_ES
-where esc.TURNO='mañana-tarde';
+where esc.TURNO='maÃ±ana-tarde';
 --5
 select count(est.ID_EST)
 from ESTUDIATES as est
@@ -276,17 +276,3 @@ select dbo.estudiante_final();
 	where est.ID_EST = dbo.estudiante_final(); 
 
 
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
